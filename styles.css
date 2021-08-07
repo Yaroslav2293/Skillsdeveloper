@@ -1,0 +1,255 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header */
+a {
+  list-style: none;
+  text-decoration: none;
+}
+.upl {
+  padding: 30px;
+  background: #B3B300;
+  color: aliceblue;
+}
+.menu{
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 20px;
+  background: blueviolet;
+}
+.menu li {
+  text-transform: uppercase;
+}
+
+.menu li a:hover {
+  color: azure;
+  padding: 18px;
+  border-bottom: 2px solid azure;
+}
+
+form {
+  padding: 20px;
+  background-color: #B3B300;
+}
+
+.sesons {
+  display: block;
+  color: rgba(0,0,0,.54);
+}
+#years {
+  color: black;
+}
+#years:focus {
+  color: #4285f4;
+}
+/* /header */
+
+/* Main */
+.club {
+  text-align: left;
+  padding-left: 20px;
+  color: #70757a;
+}
+
+table {
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.club-eblems img {
+  width: 24px;
+  height: 24px;
+}
+
+main{
+  padding-top: 10px;
+}
+
+thead th {
+  padding-top: 10px;
+}
+
+table {
+  text-align: center;
+  font-size: 14px;
+}
+
+th:first-child,
+td:first-child {
+  width: 755px;
+  font-size: 12px;
+}
+
+tbody tr:nth-child(-n+2) .champions-liga::after {
+  position: absolute;
+  content: "";
+  background-color: rgb(66, 133, 244);
+  width: 3px;
+  height: 40px;
+  left: 1px;
+}
+tbody tr:nth-last-child(n+2) .playoff-out::after {
+  position: absolute;
+  content: "";
+  background-color: #FBBC04;
+  width: 3px;
+  height: 40px;
+  left: 1px;
+}
+tbody tr:nth-last-child(-n+2) .game-over-out::after {
+  position: absolute;
+  content: "";
+  background-color:#EA4335;
+  width: 3px;
+  height: 40px;
+  left: 1px;
+}
+
+th:nth-child(n+2) {
+  width: 32px;
+  font-size: 12px;
+  color: #70757a;
+}
+
+th:last-child {
+  width: 110px;
+  color: #70757a;
+}
+
+.champions-liga,
+.playoff-out,
+.game-over-out {
+  position: relative;
+  width: 16px;
+  height: 41px;
+}
+
+.table-mesto {
+  display: flex;
+  align-items: center;
+  width: 25px;
+  height: 42px;
+}
+.name-table {
+  display: flex;
+}
+.clubs-name img,
+.club-eblems {
+  display: flex;
+  align-items: center;
+}
+.club-name {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  font-size: 15px;
+}
+/* /Main */
+
+/* static table */
+.static-table {
+  display: flex;
+  max-width: 1145px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10px;
+  background-color: #dfe1e5;
+}
+.qualification,
+.last-5-matches {
+  max-width: 575px;
+  width: 100%;
+  padding: 10px;
+}
+.qualification div {
+  padding-left: 15px;
+  margin-bottom: 10px;
+} 
+
+.qualification p{
+  position: relative;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+}
+.qualification .colorblue::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: -10px;
+  top: 0;
+  background-color: rgb(66, 133, 244);
+}
+.qualification .coloryellow::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: -10px;
+  top: 0;
+  background-color: #FBBC04;
+}
+.qualification .colorred::after {
+  content: '';
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: -10px;
+  top: 0;
+  background-color: #EA4335;
+}
+/* last-5-matches */
+.last-5-matches div {
+  margin-bottom: 10px;
+}
+
+.last-5-matches p{
+  position: relative;
+  font-size: 15px;
+  padding-left: 15px;
+  padding-bottom: 5px;
+}
+.last-5-matches .galka::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -10px;
+  top: 0;
+  background: url(img/galka.svg) no-repeat;
+}
+.last-5-matches .nicheya::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -10px;
+  top: 0;
+  background: url(img/nichuya.svg) no-repeat;
+}
+.last-5-matches .xrest::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -10px;
+  top: 0;
+  background: url(img/xrest.svg) no-repeat;
+}
+.last-5-matches .propysk::after {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: -10px;
+  top: 0;
+  background: url(img/krug.svg) no-repeat;
+}
+/* /last-5-matches */
+
+
+/* /static table */
