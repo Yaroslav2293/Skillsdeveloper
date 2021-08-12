@@ -1,0 +1,59 @@
+/* Header */
+html {
+  line-height: 16px;
+  font-size: 14px;
+}
+
+header,
+.header-logo,
+.header-ul,
+.header-ul li {
+  display: flex;
+}
+header {
+  margin: 0 auto;
+  padding: 60px 0 60px;
+  max-width: 1185px;
+  width: 100%;
+  align-items: center;
+}
+.header-logo {
+  max-width: 160px;
+  height: 90px;
+  margin-right: 250px;
+}
+.header-ul {
+  max-width: 775px;
+  width: 100%;
+  justify-content: space-between;
+}
+.header-ul li {
+  height: 30px;
+  align-items: center;
+}
+.header-ul a {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.header-ul li:first-child {
+  padding: 9px 7px 9px 6px;
+  line-height: 10px;
+  border: 1px solid #D1A954;
+}
+.header-the-main a {
+  color: #D1A954;
+  transition: 0.5s;
+}
+.header-menu__link a:hover {
+  font-size: 13px;
+  font-weight: 700;
+  color: #D1A954;
+  
+}
+/* /Header */
