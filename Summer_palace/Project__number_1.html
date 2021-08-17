@@ -5,9 +5,10 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Summer palace</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="font.css">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="script.js">
 </head>
 <body>
   <header>
@@ -24,10 +25,105 @@
       </ul>
   </header>
   <main>
-  
+    <section class="block-slider">
+      <!-- Слайдер -->
+      <div id="first-slider" class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="img/main-slider-img1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main-slider-img2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main-slider-img3.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main-slider-img1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main-slider-img2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main-slider-img3.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main-slider-img1.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main-slider-img2.jpg" alt="">
+          </div>
+          <div class="swiper-slide">
+            <img src="img/main-slider-img3.jpg" alt="">
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="slider-pagination__first">
+          <div id="pagination-slider-btn_prev" class="swiper-button-prev"></div>
+          <div id="pagination-content__slider" class="swiper-pagination"></div>
+          <div id="pagination-slider-btn_next" class="swiper-button-next"></div>
+        </div>
+        <!-- /Слайдер -->
+    </section>
+    <section class="main-restorans">
+        <div class="main-restorans__block">
+          <h1>О РЕСТОРАНЕ</h1>
+          <img src="img/icon-palace.svg" alt="">
+          <p>летний дворец</p>
+          <div class="main-restorans__img">
+            <img src="img/galery-img3.png" alt="">
+            <a class="icon-play" href="https://youtu.be/tpphaF6CUdM"></a>
+          </div>
+        </div>
+        <div class="main-fon-block_grey main-text-flex">
+          <div class="block-text-restorans">
+            <div class="restorans-block__first-item">
+              <img src="img/icon-palace-big.png" alt="">
+              <p>Добро пожаловать в Летний Дворец! <br><br>Всего в 12 километрах от Петербурга, неподалеку от знаменитых фонтанов и парков Петергофа воплощен в жизнь один из самых грандиозных проектов event-индустрии России – ресторанный комплекс «Летний Дворец». Открытый в 2009 году, он объединил под одной крышей современный банкетный зал в исторических дворцовых интерьерах на 800 гостей и собственный кейтеринг.</p>
+            </div>
+            <div class="first-block-content__restorans">
+              <div class="restorans-item-block">
+                <h3 class="icon-palace">площадка</h3>
+                <p>Сочетание классических интерьеров и современных технических возможностей выгодно отличают Летний Дворец от большинства других исторических площадок города.</p>
+              </div>
+              <div class="restorans-item-block">
+                <h3 class="icon-tehnolodgy">технологии</h3>
+                <p>Возможности «Летнего Дворца» практически безграничны с точки зрения проведения мероприятий самого разного формата и масштаба.</p>
+              </div>
+            </div>
+            <div class="second-block-content__restorans">
+              <div class="restorans-item-block">
+                <h3 class="icon-interiors">интерьеры</h3>
+                <p>Изысканное внутреннее убранство Летнего Дворца — тонко выполненная стилизация с использованием традиционных технологий и материалов — мрамора, бронзового литья.</p>
+              </div>
+              <div class="restorans-item-block">
+                <h3 class="icon-oborydovanie">оборудование</h3>
+                <p>Установлен комплект самого современного звукового оборудования, который приятно удивит даже знатока качественного звука.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="galery">
+      <div>
+        <div>
+          <h3>галерея</h3>
+          <p class="icon-galery__text"></p>
+          <p>летний дворец</p>
+        </div>
+        <div>
+
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
     
   </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
