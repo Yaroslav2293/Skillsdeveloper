@@ -3,7 +3,6 @@ const swiper = new Swiper('#first-slider', {
   // Optional parameters
   loop: true,
   speed: 400,
-  spaceBetween: 100,
   slidesPerView: 3,
   spaceBetween: 30,
 
@@ -20,4 +19,27 @@ const swiper = new Swiper('#first-slider', {
     prevEl: '#pagination-slider-btn_prev',
   },
 });
-// /Slider1
+// slider1
+
+// Slider2
+const swiperSlider = new Swiper('#second-slider', {
+  // Optional parameters
+  loop: true,
+  speed: 400,
+  slidesPerView: 6,
+
+  // If we need pagination
+  pagination: {
+    el: '#second-slider-pagination',
+
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '#second-slider-btn_next',
+    prevEl: '#second-slider-btn_prev',
+  },
+});
+// Slider2
+
