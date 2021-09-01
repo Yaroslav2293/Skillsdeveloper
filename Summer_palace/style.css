@@ -65,7 +65,11 @@ header {
   text-align: center;
   margin-bottom: 120px;
 }
+#first-slider {
+  padding: 0 10px;
+  overflow: hidden;
 
+}
 .slider-pagination__first {
   display: flex;
   align-items: center;
@@ -500,6 +504,10 @@ header {
 /* /instagram__text_block */
 
 /* Slider2 */
+#second-slider {
+  overflow: hidden;
+}
+
 #second-slider-btn_next.swiper-button-next, 
 #second-slider-btn_prev.swiper-button-prev {
   position: relative;
