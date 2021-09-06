@@ -3,36 +3,40 @@ html {
   font-size: 14px;
   box-sizing: border-box;
 }
-
+.image {
+  max-width: 100%;
+  height: 100%;
+}
 /* Header */
 header,
 .header-logo,
-.header-ul,
-.header-ul li {
+.header-menu,
+.header-menu li {
   display: flex;
 }
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 60px 0 60px;
   max-width: 1185px;
   width: 100%;
-  align-items: center;
   margin: 0 auto;
 }
 .header-logo {
   max-width: 160px;
   height: 90px;
-  margin-right: 250px;
 }
-.header-ul {
+.header-menu {
   max-width: 775px;
   width: 100%;
   justify-content: space-between;
 }
-.header-ul li {
+.header-menu li {
   height: 30px;
   align-items: center;
 }
-.header-ul a {
+.header-menu a {
   font-family: "Montserrat";
   font-weight: 300;
   font-size: 13px;
@@ -42,25 +46,25 @@ header {
   color: #000000;
 }
 
-.header-ul li:first-child {
+.header-menu li:first-child {
   padding: 9px 7px 9px 6px;
   line-height: 10px;
   border: 1px solid #D1A954;
 }
-.header-the-main a {
+.header-menu-first_link a {
   color: #D1A954;
   transition: 0.5s;
 }
 .header-menu__link a:hover {
   font-size: 13px;
-  font-weight: 700;
   color: #D1A954;
-  
+  box-shadow: 10px 5px 5px gold;
+  transition: .3s;
 }
 /* /Header */
 
 /* Slider1 */
-.block-slider {
+.restaurant-slider {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 120px;
@@ -70,33 +74,37 @@ header {
   overflow: hidden;
 
 }
-.slider-pagination__first {
+.restaurant__swiper-slide {
+  width: 580px;
+  height: 650px;
+}
+.restaurant-slider__pagination {
   display: flex;
   align-items: center;
   justify-content: center;
   padding-top: 40px;
 }
 
-#pagination-content__slider.swiper-pagination {
+#restaurant-slider_pagination__container.swiper-pagination {
   position: static;
   width: 15%;
 }
-#pagination-slider-btn_next.swiper-button-next:after {
+#restaurant-slider_pagination__btn_next.swiper-button-next:after {
   font-size: 10px;
 }
-#pagination-slider-btn_prev.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+#restaurant-slider_pagination__btn_prev.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
   font-size: 10px;
 }
 
-#pagination-slider-btn_prev.swiper-button-prev,
-#pagination-slider-btn_next.swiper-button-next {
+#restaurant-slider_pagination__btn_prev.swiper-button-prev,
+#restaurant-slider_pagination__btn_next.swiper-button-next {
   position: relative;
   top: 13px;
   left: 0;
   color: #000000;
 }
 
-#pagination-content__slider .swiper-pagination-bullet {
+#restaurant-slider_pagination__container .swiper-pagination-bullet {
   width: 20px;
   height: 2px;
   border-radius: 0;
@@ -110,27 +118,32 @@ header {
 /* /Slider1 */
 
 /*restorans */
-.main-restorans {
+.about-the-restaurant {
   font-family: "Montserrat";
   font-weight: 300;
   text-align: center;
   color: #616161;
 }
-.main-restorans__block h1 {
+.about-the-restaurant__heading h1 {
   font-family: 'Montserrat';
   font-size: 36px;
   font-weight: 300;
   color: #222222;
   margin-bottom: 25px;
 }
-.main-restorans__block img {
+.about-the-restaurant__first-item img {
+  width: 203px;
+  height: 110px;
+}
+
+.about-the-restaurant__img img {
   padding-bottom: 10px;
 }
-.main-restorans__img {
+.about-the-restaurant__img {
   position: relative;
 }
 
-.icon-play::after {
+.about-the-restaurant__icon-play::after {
   left: 49%;
   bottom: 45%;
   content: '';
@@ -140,58 +153,56 @@ header {
   background: url(../Summer_palace/img/play-button.png);
 }
 
-.main-restorans__block p {
+.about-the-restaurant__heading p {
   font-family: 'Montserrat';
   font-size: 9px;
   font-weight: 300;
   line-height: 11px;
   text-transform: uppercase;
 }
-.main-restorans__img {
+.about-the-restaurant__img {
   position: relative;
   z-index: 0;
 }
-.main-fon-block_grey {
+.about-the-restaurant__background_grey {
   position: relative;
   padding-top: 360px;
   margin-top: -285px;
   background-color: #E5E5E5;
   z-index: -1;
 }
-.block-text-restorans {
+.about-the-restaurant__content {
   display: flex;
   justify-content: space-between;
   width: 1015px;
   margin: 0 auto;
 }
-.restorans-block__first-item {
+.about-the-restaurant__first-item {
   width: 350px;
 }
-.restorans-block__first-item p {
+.about-the-restaurant__first-item p {
   text-align: left;
 }
-.restorans-block__first-item img {
+.about-the-restaurant__first-item img {
   margin-bottom: 33px;
 }
-.restorans-block__second-item {
-  width: 540px;
-}
-.restorans-item-block {
+
+.about-the-restaurant_content-text {
   position: relative;
   width: 255px;
   height: 155px;
   flex-direction: column;
   text-align: left;
 }
-.restorans-item-block p {
+.about-the-restaurant_content-text p {
   font-weight: 300;
   font-size: 14px;
 }
-.restorans-item-block {
+.about-the-restaurant_content-text {
   margin-bottom: 40px;
 }
 
-.restorans-item-block h3 {
+.about-the-restaurant_content-text h3 {
   text-align: center;
   font-weight: 300;
   font-size: 16px;
@@ -202,18 +213,18 @@ header {
   margin-bottom: 20px;
 }
 
-.icon-palace::after,
-.icon-interiors::after,
-.icon-tehnolodgy::after,
-.icon-oborydovanie::after {
+.about-the-restaurant__icon-palace::after,
+.about-the-restaurant__icon-interiors::after,
+.about-the-restaurant__icon-technologies::after,
+.about-the-restaurant__icon-equipment::after {
   content: '';
   position: absolute;
 }
-.icon-oborydovanie {
+.about-the-restaurant__icon-equipment {
   padding-left: 25px;
 }
 
-.icon-palace::after {
+.about-the-restaurant__icon-palace::after {
   top: 0;
   left: 0;
   width: 46px;
@@ -221,7 +232,7 @@ header {
   background: url(../Summer_palace/img/icon-palace.svg);
 }
 
-.icon-interiors::after {
+.about-the-restaurant__icon-interiors::after {
   top: 10px;
   left: 0;
   width: 39px;
@@ -229,14 +240,14 @@ header {
   background: url(../Summer_palace/img/icon-interiors.png);
 }
 
-.icon-tehnolodgy::after {
+.about-the-restaurant__icon-technologies::after {
   top: 0;
   left: 0;
   width: 37px;
   height: 32px;
   background: url(../Summer_palace/img/icon-tehnolodgy.png);
 }
-.icon-oborydovanie::after {
+.about-the-restaurant__icon-equipment::after {
   top: 0;
   left: 0;
   width: 43px;
@@ -244,24 +255,25 @@ header {
   background: url(../Summer_palace/img/icon-oborydovanie.png);
 }
 /* /restorans */
+
 /* galery */
-.galery {
+.gallery {
   width: 1110px;
   text-align: center;
   margin: 0 auto;
   margin-top: 140px;
   margin-bottom: 150px;
 }
-.galery-block-first-item_flex {
+.gallery__first-content_flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 30px;
 }
-.galery-block-text_first-item {
+.gallery__first-content_item {
   margin-right: 130px;
 }
-.galery-block-text_first-item h3 {
+.gallery__first-content_item h3 {
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 24px;
@@ -269,23 +281,23 @@ header {
   text-transform: uppercase;
   margin-bottom: 25px;
 }
-.galery-img_block {
+.gallery__first-content_img {
   margin-bottom: 10px;
 }
-.galery-block-content_text {
+.gallery__first-content_text {
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 9px;
   text-transform: uppercase;
   color: #000000;
 }
-.galery-block-second-item_flex {
+.gallery__second-content_flex {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.galery-block-second_img2 {
-  margin-bottom: 30px;
+.gallery__second-content_image {
+  margin-bottom: 20px;
 }
 /* /galery */
 
@@ -295,25 +307,25 @@ header {
   background: url(../Summer_palace/img/img-fon.png);
   margin-bottom: 120px;
 }
-.presentation-content {
+.presentation__content {
   margin: 0 auto;
   padding-top: 130px;
   width: 665px;
   text-align: center;
   padding-bottom: 120px;
 }
-.presentation-content h2 {
+.presentation__content h2 {
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 36px;
   text-transform: uppercase;
   margin-bottom: 70px;
 }
-.presentation-btn__block {
+.presentation__content_btn {
   display: flex;
   justify-content: space-between;
 }
-.presentation-btn__block a:first-child {
+.presentation__content_btn button:first-child {
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 16px;
@@ -322,8 +334,10 @@ header {
   text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
 }
-.presentation-btn__block a:last-child {
+.presentation__content_btn button:last-child {
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 16px;
@@ -332,24 +346,26 @@ header {
   text-transform: uppercase;
   color: #000000;
   background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
 }
 /* /presentation */
 
-/* want-to-spend__event */
-.want-to-spend__event {
+/* event */
+.event {
   max-width: 1110px;
   margin: 0 auto;
 }
-.want-to-spend-block__text {
+.event__content {
   display: flex;
   justify-content: space-between;
   margin-bottom: 120px;
 }
-.want-to-spend-left-block__text {
+.event__content_left-item {
   max-width: 540px;
 }
 
-.want-to-spend-left-block__text h2 {
+.event__content_left-item h2 {
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 36px;
@@ -360,7 +376,7 @@ header {
   margin-bottom: 40px;
 }
 
-.want-to-spend-left-block__text p {
+.event__content_left-item p {
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 14px;
@@ -368,18 +384,22 @@ header {
   color: #616161;
   margin-bottom: 60px;
 }
-.kontacts-block-text_flex {
+.contacts__content_flex {
   display: flex;
   justify-content: space-between;
 }
-.kontacts-left-mini-block,
-.kontacts-right-mini-block {
+.contacts__left-content_link,
+.contacts__right-content_link {
   max-width: 255px;
   width: 100%;
 }
+.contacts__left-content_link a:hover,
+.contacts__right-content_link a:hover {
+  text-decoration: none;
+}
 
-.kontacts-left-mini-block h3,
-.kontacts-right-mini-block h3 {
+.contacts__left-content_link h3,
+.contacts__right-content_link h3 {
   font-family: 'Montserrat';
   font-weight: 300;
   font-weight: 300;
@@ -388,8 +408,8 @@ header {
   color: #000000;
   margin-bottom: 30px;
 }
-.kontacts-left-mini-block a,
-.kontacts-right-mini-block a {
+.contacts__left-content_link a,
+.contacts__right-content_link a {
   position: relative;
   display: block;
   font-family: "Montserrat";
@@ -399,11 +419,11 @@ header {
   text-decoration-line: underline;
   color: #000000;
 }
-.icon-kontacts-adress,
-.icon-kontacts-tel {
+.contacts__content_icon-adress,
+.contacts__content_icon-tel {
  margin-bottom: 30px;
 }
-.icon-kontacts-adress::after {
+.contacts__content_icon-adress::after {
   position: absolute;
   content: "";
   left: 0;
@@ -412,16 +432,16 @@ header {
   height: 30px;
   background: url(../Summer_palace/img/icon-maps.svg) no-repeat;
 }
-.icon-kontacts-tel::after {
+.contacts__content_icon-tel::after {
   position: absolute;
   content: "";
   left: 0;
-  top: 0;
+  top: -5px;
   width: 30px;
   height: 30px;
   background: url(../Summer_palace/img/icon-tel.svg) no-repeat;
 }
-.icon-kontacts-email::after {
+.contacts__content_icon-email::after {
   position: absolute;
   content: "";
   left: 0;
@@ -430,35 +450,35 @@ header {
   height: 22px;
   background: url(../Summer_palace/img/icon-email.svg) no-repeat;
 }
-.want-to-spend-right-block__text {
+.contacts__right-content_link {
   max-width: 540px;
   width: 100%;
 }
-.want-to-spend-right__form input {
+.contacts__right-content_form input {
   max-width: 540px;
   height: 32px;
   width: 100%;
+  padding: 15px;
   margin-bottom: 25px;
   border: none;
   border-bottom: 1px solid #D0D0D0;
 }
-.want-to-spend-right__form textarea {
+.contacts__right-content_form textarea {
   width: 540px;
   height: 196px;
-  padding-left: 20px;
-  padding-top: 15px;
+  padding: 15px;
   border: 1px solid #D0D0D0;
   box-sizing: border-box;
   margin-bottom: 30px;
 }
-.want-to-spend-right__form::placeholder {
+.contacts__right-content_form::placeholder {
   font-family: "Montserrat";
   font-weight: 300;
   font-size: 14px;
   line-height: 135%;
   color: #616161;
 }
-.want-to-spend-right__form-button {
+.contacts__right-content_form_btn {
   max-width: 182px;
   height: 45px;
   width: 100%;
@@ -471,15 +491,16 @@ header {
   border: none;
   cursor: pointer;
 }
-/* /want-to-spend__event */
+/* /event*/
+
 /* instagram__text_block */
-.instagram__text_block {
+.instagram {
   text-align: center;
   background: #F9F7F7;
   padding-top: 120px;
   padding-bottom: 90px;
 }
-.instagram__text_block h2 {
+.instagram h2 {
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 36px;
@@ -492,7 +513,7 @@ header {
   margin-top: 20px;
   margin-bottom: 10px;
 }
-.instagram__text_block p {
+.instagram p {
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 9px;
@@ -508,35 +529,35 @@ header {
   overflow: hidden;
 }
 
-#second-slider-btn_next.swiper-button-next, 
-#second-slider-btn_prev.swiper-button-prev {
+#instagram__slider_btn_next.swiper-button-next, 
+#instagram__slider_btn_prev.swiper-button-prev {
   position: relative;
 }
-#second-slider-pagination.swiper-pagination {
+#instagram__slider_swiper_pagination.swiper-pagination {
   position: relative;
   top: -14px;
 }
-.second-pagination_block {
+.instagram__slider_pagination {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-top: 30px;
 }
-#second-slider-pagination .swiper-pagination-bullet {
+#instagram__slider_swiper_pagination .swiper-pagination-bullet {
   width: 20px;
   height: 2px;
   border-radius: 0;
   border: 1px solid #000000;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
-#second-slider-pagination.swiper-pagination {
+#instagram__slider_swiper_pagination.swiper-pagination {
   width: 10%;
 }
-#second-slider-btn_next::after {
+#instagram__slider_btn_next::after {
   font-size: 10px;
   color: #000000;
 }
-#second-slider-btn_prev::after {
+#instagram__slider_btn_prev::after {
   font-size: 10px;
   color: #000000;
 }
@@ -547,14 +568,14 @@ footer {
   padding-top: 30px;
   padding-bottom: 30px;
 }
-.footer_flex {
+.footer__content_flex {
   max-width: 1110px;
   width: 100%;
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
 }
-.footer_flex p {
+.footer__content_flex p {
   font-family: 'Montserrat';
   font-weight: 300;
   font-size: 14px;

@@ -8,15 +8,15 @@ const swiper = new Swiper('#first-slider', {
 
   // If we need pagination
   pagination: {
-    el: '#pagination-content__slider',
+    el: '#restaurant-slider_pagination__container',
 
     clickable: true,
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '#pagination-slider-btn_next',
-    prevEl: '#pagination-slider-btn_prev',
+    nextEl: '#restaurant-slider_pagination__btn_next',
+    prevEl: '#restaurant-slider_pagination__btn_prev',
   },
 });
 // slider1
@@ -30,15 +30,15 @@ const swiperSlider = new Swiper('#second-slider', {
 
   // If we need pagination
   pagination: {
-    el: '#second-slider-pagination',
+    el: '#instagram__slider_swiper_pagination',
 
     clickable: true,
   },
 
   // Navigation arrows
   navigation: {
-    nextEl: '#second-slider-btn_next',
-    prevEl: '#second-slider-btn_prev',
+    nextEl: '#instagram__slider_btn_next',
+    prevEl: '#instagram__slider_btn_prev',
   },
 });
 // Slider2
