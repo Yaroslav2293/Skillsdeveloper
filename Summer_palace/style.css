@@ -296,7 +296,7 @@ header {
   align-items: center;
   justify-content: space-between;
 }
-.gallery__second-content_image {
+.gallery__second-content_image:first-child {
   margin-bottom: 20px;
 }
 /* /galery */
