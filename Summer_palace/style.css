@@ -23,10 +23,15 @@ header {
   width: 100%;
   margin: 0 auto;
 }
+
 .header-logo {
   max-width: 160px;
   height: 90px;
 }
+.header__button{
+  display: none;
+}
+
 .header-menu {
   max-width: 775px;
   width: 100%;
@@ -583,3 +588,239 @@ footer {
   color: #000000;
 }
 /* /Footer */
+
+/* Adapt version */
+@media screen and (min-width: 320px) and (max-width: 1600px) {
+  #first-slider img,
+  #first-slider .restaurant__swiper-slide  {
+    height: auto;
+  }
+
+}
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  #instagram__slider_swiper_pagination.swiper-pagination {
+    width: 20%;
+  }
+
+}
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  header {
+    align-items: initial;
+  }
+  .header__burger {
+    display: none;
+  }
+  
+  #restaurant-slider_pagination__container.swiper-pagination {
+    max-width: 30%;
+    width: 100%;
+  }
+  header,
+  .header-menu {
+    flex-direction: column;
+  }
+  .header-logo {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+  header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 50;
+  }
+  .header__shown {
+    position: sticky;
+    background-color: #fff;
+  }
+  .header-menu {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    padding: 10px 20px;
+    max-width: 300px;
+    width: 100%;
+    background-color: #E5E5E5;;
+  }
+  .header__button {
+    position: absolute;
+    top: 12px;
+    right: 0;
+    font-size: 25px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: none;
+    display: block;
+  }
+  .logo__img {
+    max-width: 120px;
+    width: 100%;
+  }
+  
+}
+
+@media screen and (min-width: 320px) and (max-width: 1100px) {
+  #first-slider {
+    margin-top: 30px;
+  }
+  .about-the-restaurant__background_grey {
+    padding-top: 275px;
+  }
+  .about-the-restaurant__first-item {
+    margin-bottom: 30px;
+  }
+  .about-the-restaurant__content {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .presentation {
+    margin-bottom: 60px;
+  }
+  .about-the-restaurant__first-item p {
+    text-align: center;
+  }
+  .gallery {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  .gallery__first-content_flex {
+    flex-direction: column;
+  }
+  .gallery__first-content_item {
+    margin-right: 0;
+  }
+  .gallery__second-content_flex {
+    flex-direction: column;
+  }
+  .img-banquet {
+    margin: 30px 0 30px;
+  }
+  .img-spread {
+    margin-bottom: 30px;
+  }
+  .event {
+    width: 100%;
+    text-align: center;
+  }
+  .event__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .event__content_left-item {
+    margin-bottom: 50px;
+  }
+  .presentation__content_btn {
+    flex-direction: column;
+    align-items: center;
+  }
+  .presentation__content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .presentation__content_btn button:first-child {
+    margin-bottom: 40px;
+  }
+  footer {
+    margin: 0 20px;
+  }
+  
+}
+
+@media screen and (min-width: 320px) and (max-width: 620px) {
+  #restaurant-slider_pagination__container.swiper-pagination {
+    max-width: 60%;
+  }
+  .about-the-restaurant__icon-play::after {
+    left: 45%;
+    bottom: 40%;
+  }
+  .presentation__content {
+    width: 100%;
+  }
+  .presentation__content h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .presentation__content_btn button:first-child {
+    margin-top: 40px;
+  }
+  .presentation__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .about-the-restaurant__first-item {
+    width: 80%;
+  }
+  .contacts__right-content_form textarea,
+  .contacts__right-content_form input {
+    width: 100%;
+  }
+  .event__content {
+    margin: 0 20px;
+  }
+  .event__content_left-item h2 {
+    font-size: 25px;
+  }
+  .event__content_left-item p {
+    font-size: 12px;
+  }
+  .contacts__right-content_form {
+    margin-bottom: 30px;
+  }
+  .img-spread {
+    width: 90%;
+  }
+  #instagram__slider_swiper_pagination.swiper-pagination {
+    width: 40%;
+  }
+  .footer__content_flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__copyright {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .contacts__content_flex {
+    flex-direction: column;
+  }
+  .contacts__left-content_link, .contacts__right-content_link {
+    max-width: none;
+    margin-bottom: 30px;
+  }
+  .img-banquet,
+  .img-people,
+  .img-cocktail,
+  .img-auto-sales {
+    width: 90%;
+  }
+  .presentation__content h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .about-the-restaurant__icon-play::after {
+    left: 38%;
+    bottom: 33%;
+  }
+  .footer__content_flex p {
+    font-size: 12px;
+  }
+  .instagram h2 {
+    font-size: 25px;
+  }
+  .about-the-restaurant p {
+    font-size: 12px;
+  }
+  .presentation__content_btn button:last-child {
+    width: 280px;
+ }
+}
+/* /Adapt version */

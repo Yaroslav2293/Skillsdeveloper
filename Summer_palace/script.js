@@ -1,3 +1,34 @@
+// menu burger
+const burgerMenu = () => {
+  const menu = document.querySelector('.header__button'),
+        menuNav = document.querySelector('.header__burger'),
+        body = document.querySelector('.body');
+  
+menu.addEventListener('click', (event) => {
+  let target = event.target;
+
+  if (target.closest('.fa-bars')) {
+    menu.classList.add('burger-open');
+    menuNav.style.display = 'block';
+  } 
+  else if (target.classList.contains('burger')) {
+    menu.classList.remove('burger-open');
+    menuNav.style.display = 'none';
+  }
+  else if (target.tagName !== 'DIV') {
+    menu.classList.remove('burger-open');
+    menuNav.style.display = 'none';
+  }
+  else {
+    return
+  }
+});
+};
+burgerMenu();
+
+
+// /menu burger
+
 // Slider1
 const swiper = new Swiper('#first-slider', {
   // Optional parameters

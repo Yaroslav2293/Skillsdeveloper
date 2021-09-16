@@ -3,19 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
   <title>Summer palace</title>
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
   <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
   <link rel="stylesheet" href="font.css">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
+  <header class="header__shown">
       <a class="header-logo" href="#">
-        <img class="image" src="img/logo.svg" alt="img-logo">
+        <img class="image logo__img" src="img/logo.svg" alt="img-logo">
       </a>
-      <ul class="header-menu">
+      <ul class="header-menu header__burger">
         <li class="header-menu__link header-menu-first_link"><a href="#">Главная</a></li>
         <li class="header-menu__link"><a href="#">Sofit event house</a></li>
         <li class="header-menu__link"><a href="#">Мероприятия</a></li>
@@ -23,6 +24,10 @@
         <li class="header-menu__link"><a href="#">Кейтеринг</a></li>
         <li class="header-menu__link"><a href="#">Для агенств</a></li>
       </ul>
+        <button class="header__button">
+          <i class="fas fa-bars"></i>
+          <i class="fas fa-times"></i>
+        </button>
   </header>
   <main>
     <section class="restaurant-slider">
@@ -114,17 +119,17 @@
           <p class="gallery__first-content_img"><img class="image" src="img/icon-palace.svg" alt=""></p>
           <p class="gallery__first-content_text">летний дворец</p>
         </div>
-          <img class="image" src="img/galery-img1.jpg" alt="image_gallery">
-          <img class="image" src="img/galery-img2.png" alt="image_gallery">
+          <img class="image img-banquet" src="img/galery-img1.jpg" alt="image_gallery">
+          <img class="image img-auto-sales" src="img/galery-img2.png" alt="image_gallery">
       </div>
       <div class="gallery__second-content_flex">
-          <img class="image" src="img/galery-img6.png" alt="image_gallery">
+          <img class="image img-spread" src="img/galery-img6.png" alt="image_gallery">
         <div>
           <div class="gallery__second-content_image">
-            <img class="image" src="img/galery-img4.png" alt="image_gallery">
+            <img class="image img-people" src="img/galery-img4.png" alt="image_gallery">
           </div>
           <div class="gallery__second-content_image">
-            <img class="image" src="img/galery-img5.png" alt="image_gallery">
+            <img class="image img-cocktail" src="img/galery-img5.png" alt="image_gallery">
           </div>
         </div>
       </div>
@@ -217,6 +222,7 @@
   </footer>
   <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
   <script src="script.js"></script>
 </body>
 </html>
