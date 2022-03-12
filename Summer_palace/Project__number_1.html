@@ -16,7 +16,7 @@
       <a class="header-logo" href="#">
         <img class="image logo__img" src="img/logo.svg" alt="img-logo">
       </a>
-      <ul class="header-menu header__burger">
+      <ul id="header-menu-hidden" class="header-menu hidden" onclick="toggleMenu">
         <li class="header-menu__link header-menu-first_link"><a href="#">Главная</a></li>
         <li class="header-menu__link"><a href="#">Sofit event house</a></li>
         <li class="header-menu__link"><a href="#">Мероприятия</a></li>
@@ -24,9 +24,9 @@
         <li class="header-menu__link"><a href="#">Кейтеринг</a></li>
         <li class="header-menu__link"><a href="#">Для агенств</a></li>
       </ul>
-        <button class="header__button">
-          <i class="fas fa-bars"></i>
-          <i class="fas fa-times"></i>
+        <button id="burger-btn" class="header__button">
+          <i id="icon-shown-btn" class="fas fa-bars"></i>
+          <i id="icon-shown-hidden" class="fas fa-times hidden"></i>
         </button>
   </header>
   <main>

@@ -1,32 +1,30 @@
 // menu burger
-const burgerMenu = () => {
-  const menu = document.querySelector('.header__button'),
-        menuNav = document.querySelector('.header__burger'),
-        body = document.querySelector('.body');
-  
-menu.addEventListener('click', (event) => {
-  let target = event.target;
+const button = document.getElementById('burger-btn');
+const mainMenu = document.getElementById('header-menu-hidden');
 
-  if (target.closest('.fa-bars')) {
-    menu.classList.add('burger-open');
-    menuNav.style.display = 'block';
-  } 
-  else if (target.classList.contains('burger')) {
-    menu.classList.remove('burger-open');
-    menuNav.style.display = 'none';
-  }
-  else if (target.tagName !== 'DIV') {
-    menu.classList.remove('burger-open');
-    menuNav.style.display = 'none';
-  }
-  else {
-    return
-  }
-});
-};
-burgerMenu();
+let isHiddenMenu = true;
 
+button.addEventListener('click', toggleMenu)
 
+function toggleMenu() {
+
+  const hiddenClass = 'hidden';
+
+  const iconShown = document.getElementById('icon-shown-btn');
+  const iconHidden = document.getElementById('icon-shown-hidden');
+
+  if (isHiddenMenu) {
+    mainMenu.classList.remove(hiddenClass)
+    iconHidden.classList.remove(hiddenClass)
+    iconShown.classList.add(hiddenClass)
+  } else {
+    mainMenu.classList.add(hiddenClass)
+    iconHidden.classList.add(hiddenClass)
+    iconShown.classList.remove(hiddenClass)
+  }
+
+  isHiddenMenu = !isHiddenMenu;
+}
 // /menu burger
 
 // Slider1
