@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>Summer palace</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+  <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="font.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header__shown">
+      <a class="header-logo" href="#">
+        <img class="image logo__img" src="img/logo.svg" alt="img-logo">
+      </a>
+      <ul id="header-menu-hidden" class="header-menu hidden" onclick="toggleMenu">
+        <li class="header-menu__link header-menu-first_link"><a href="#">Главная</a></li>
+        <li class="header-menu__link"><a href="#">Sofit event house</a></li>
+        <li class="header-menu__link"><a href="#">Мероприятия</a></li>
+        <li class="header-menu__link"><a href="#">Туристам</a></li>
+        <li class="header-menu__link"><a href="#">Кейтеринг</a></li>
+        <li class="header-menu__link"><a href="#">Для агенств</a></li>
+      </ul>
+        <button id="burger-btn" class="header__button">
+          <i id="icon-shown-btn" class="fas fa-bars"></i>
+          <i id="icon-shown-hidden" class="fas fa-times hidden"></i>
+        </button>
+  </header>
+  <main>
+    <section class="restaurant-slider">
+      <!-- Слайдер -->
+      <div id="first-slider" class="restaurant-slider__container swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="restaurant-slider__wrapper swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide restaurant__swiper-slide">
+            <img class="image" src="img/main-slider-img1.jpg" alt="image_slider">
+          </div>
+          <div class="swiper-slide restaurant__swiper-slide">
+            <img class="image" src="img/main-slider-img2.jpg" alt="image_slider">
+          </div>
+          <div class="swiper-slide restaurant__swiper-slide">
+            <img class="image" src="img/main-slider-img3.jpg" alt="image_slider">
+          </div>
+          <div class="swiper-slide restaurant__swiper-slide">
+            <img class="image" src="img/main-slider-img1.jpg" alt="image_slider">
+          </div>
+          <div class="swiper-slide restaurant__swiper-slide">
+            <img class="image" src="img/main-slider-img2.jpg" alt="image_slider">
+          </div>
+          <div class="swiper-slide restaurant__swiper-slide">
+            <img class="image" src="img/main-slider-img3.jpg" alt="image_slider">
+          </div>
+          <div class="swiper-slide restaurant__swiper-slide">
+            <img class="image" src="img/main-slider-img1.jpg" alt="image_slider">
+          </div>
+          <div class="swiper-slide restaurant__swiper-slide">
+            <img class="image" src="img/main-slider-img2.jpg" alt="image_slider">
+          </div>
+          <div class="swiper-slide restaurant__swiper-slide">
+            <img class="image" src="img/main-slider-img3.jpg" alt="image_slider">
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="restaurant-slider__pagination">
+          <div id="restaurant-slider_pagination__btn_prev" class="swiper-button-prev"></div>
+          <div id="restaurant-slider_pagination__container" class="swiper-pagination"></div>
+          <div id="restaurant-slider_pagination__btn_next" class="swiper-button-next"></div>
+        </div>
+      </div>
+        <!-- /Слайдер -->
+    </section>
+    <section class="about-the-restaurant">
+        <div class="about-the-restaurant__heading">
+          <h1>О РЕСТОРАНЕ</h1>
+          <img class="image" src="img/icon-palace.svg" alt="image-palace">
+          <p>летний дворец</p>
+          <div class="about-the-restaurant__img">
+            <img class="image" src="img/galery-img3.png" alt="image_gallery">
+            <a class="about-the-restaurant__icon-play" href="https://youtu.be/tpphaF6CUdM"></a>
+          </div>
+        </div>
+        <div class="about-the-restaurant__background_grey">
+          <div class="about-the-restaurant__content">
+            <div class="about-the-restaurant__first-item">
+              <img class="image" src="img/icon-palace-big.png" alt="image_big-palace">
+              <p>Добро пожаловать в Летний Дворец! <br><br>Всего в 12 километрах от Петербурга, неподалеку от знаменитых фонтанов и парков Петергофа воплощен в жизнь один из самых грандиозных проектов event-индустрии России – ресторанный комплекс «Летний Дворец». Открытый в 2009 году, он объединил под одной крышей современный банкетный зал в исторических дворцовых интерьерах на 800 гостей и собственный кейтеринг.</p>
+            </div>
+            <div class="about-the-restaurant_first-text">
+              <div class="about-the-restaurant_content-text">
+                <h3 class="about-the-restaurant__icon-palace">площадка</h3>
+                <p>Сочетание классических интерьеров и современных технических возможностей выгодно отличают Летний Дворец от большинства других исторических площадок города.</p>
+              </div>
+              <div class="about-the-restaurant_content-text">
+                <h3 class="about-the-restaurant__icon-technologies">технологии</h3>
+                <p>Возможности «Летнего Дворца» практически безграничны с точки зрения проведения мероприятий самого разного формата и масштаба.</p>
+              </div>
+            </div>
+            <div class="about-the-restaurant__second-item">
+              <div class="about-the-restaurant_content-text">
+                <h3 class="about-the-restaurant__icon-interiors">интерьеры</h3>
+                <p>Изысканное внутреннее убранство Летнего Дворца — тонко выполненная стилизация с использованием традиционных технологий и материалов — мрамора, бронзового литья.</p>
+              </div>
+              <div class="about-the-restaurant_content-text">
+                <h3 class="about-the-restaurant__icon-equipment">оборудование</h3>
+                <p>Установлен комплект самого современного звукового оборудования, который приятно удивит даже знатока качественного звука.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="gallery">
+      <div class="gallery__first-content_flex">
+        <div class="gallery__first-content_item">
+          <h3>галерея</h3>
+          <p class="gallery__first-content_img"><img class="image" src="img/icon-palace.svg" alt=""></p>
+          <p class="gallery__first-content_text">летний дворец</p>
+        </div>
+          <img class="image img-banquet" src="img/galery-img1.jpg" alt="image_gallery">
+          <img class="image img-auto-sales" src="img/galery-img2.png" alt="image_gallery">
+      </div>
+      <div class="gallery__second-content_flex">
+          <img class="image img-spread" src="img/galery-img6.png" alt="image_gallery">
+        <div>
+          <div class="gallery__second-content_image">
+            <img class="image img-people" src="img/galery-img4.png" alt="image_gallery">
+          </div>
+          <div class="gallery__second-content_image">
+            <img class="image img-cocktail" src="img/galery-img5.png" alt="image_gallery">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="presentation">
+      <div class="presentation__content">
+        <h2>узнайте о нас больше</h2>
+        <div class="presentation__content_btn">
+          <button>Скачать план</button>
+          <button>Скачать презентацию</button> 
+        </div>
+      </div>
+    </section>
+    <section class="event">
+      <div class="event__content">
+        <div class="event__content_left-item">
+          <h2>хотите провести<br> мероприятие?</h2>
+          <p>Или у вас остались вопросы, на которые мы сможем вам ответить<br>
+            в процессе разговора - напишите нам. Мы открыты для диалога!</p>
+            <div class="contacts__content_flex">
+              <div class="contacts__left-content_link">
+                <h3>ресторан</h3>
+                <a class="contacts__content_icon-adress" href="https://goo.gl/maps/1ZaKfywyJsqubVPe9">Санкт-Петербургское<br> шоссе, д 130, к. 7</a>
+                <a class="contacts__content_icon-tel" href="tel:+78122106795">+7 (812) 210 67 95</a>
+                <a class="contacts__content_icon-email" href="mailto:hello@summerpalace.ru">hello@summerpalace.ru</a>
+              </div>
+              <div class="contacts__right-content_link">
+                <h3>офис</h3>
+                <a class="contacts__content_icon-adress" href="https://goo.gl/maps/hSHFfscVD1wZG1ey6">ст. м. «Лиговский проспект», ул. Черняховского, д. 75</a>
+                <a class="contacts__content_icon-tel" href="tel:+78122106795">+7 (812) 210 67 95</a>
+                <a class="contacts__content_icon-email" href="mailto:hello@summerpalace.ru">hello@summerpalace.ru</a>
+              </div>
+            </div>
+        </div>
+        <div class="contacts__right-content_link">
+          <form class="contacts__right-content_form" action="URL" method="post">
+            <input type="text" placeholder="Ваше имя">
+            <input type="email" placeholder="Ваш e-mail">
+            <textarea name="text" placeholder="Сообщение"></textarea>
+            <button class="contacts__right-content_form_btn">Отправить</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="instagram">
+        <h2>наш instagram</h2>
+        <p class="instagram_icon"><img src="img/icon-palace.svg" alt=""></p>
+        <p>летний дворец</p>
+    </section>
+    <section class="instagram__slider">
+      <!-- Слайдер -->
+      <div id="second-slider" class="instagram__slider_container swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="instagram__slider_wrapper swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide instagram__swiper-slide">
+            <img class="image" src="img/instagram-img1.jpg" alt="instagram__slider-image">
+          </div>
+          <div class="swiper-slide instagram__swiper-slide">
+            <img class="image" src="img/instagram-img2.jpg" alt="instagram__slider-image">
+          </div>
+          <div class="swiper-slide instagram__swiper-slide">
+            <img class="image" src="img/instagram-img1.jpg" alt="instagram__slider-image">
+          </div>
+          <div class="swiper-slide instagram__swiper-slide">
+            <img class="image" src="img/instagram-img2.jpg" alt="instagram__slider-image">
+          </div>
+          <div class="swiper-slide instagram__swiper-slide">
+            <img class="image" src="img/instagram-img1.jpg" alt="instagram__slider-image">
+          </div>
+          <div class="swiper-slide instagram__swiper-slide">
+            <img class="image" src="img/instagram-img2.jpg" alt="instagram__slider-image">
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="instagram__slider_pagination">
+          <div id="instagram__slider_btn_prev" class="swiper-button-prev"></div>
+          <div id="instagram__slider_swiper_pagination" class="swiper-pagination"></div>
+          <div id="instagram__slider_btn_next" class="swiper-button-next"></div>
+        </div>
+      </div>
+        <!-- /Слайдер -->
+    </section>
+  </main>
+  <footer>
+    <div class="footer__content_flex">
+      <p class="footer__copyright">Copyright (с) 2019 Ресторан “Летний дворец”</p>
+      <p class="footer__facebook">Facebook — 	Vkontakte — 	Instagram</p>
+    </div>
+  </footer>
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

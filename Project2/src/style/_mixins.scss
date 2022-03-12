@@ -1,0 +1,94 @@
+@mixin text($color, $font-weight, $font-size) {
+  color: $color;
+  font-weight: $font-weight;
+  font-size: $font-size;
+}
+
+%flex-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+
+
+
+@mixin customScroll($color, $background, $size: 2px) {
+  scrollbar-width: thin;
+  scrollbar-color: $color $background;
+
+  &::-webkit-scrollbar {
+      width: $size;
+      height: $size;
+      border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-track {
+      background: $background;
+      border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+      background: $color;
+      border-radius: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+      background: $color;
+  }
+}
+
+$breakpoints: (
+  small: 400px,
+  xs: 600px,
+  sm: 768px,
+  s: 840px,
+  md: 992px,
+  tab: 1105px,
+  lg: 1150px
+);
+
+$breakpoint: map-get($breakpoints, sm);
+
+@mixin media-up($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @media (min-width: $breakpoint-value) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+@mixin media-down($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    $breakpoint-value: map-get($breakpoints, $breakpoint);
+
+    @media (max-width: ($breakpoint-value - 0.02)) {
+      @content;
+    }
+  } @else {
+    @warn 'Invalid breakpoint: #{$breakpoint}.';
+  }
+}
+
+@mixin media-between($lower, $upper) {
+  @if map-has-key($breakpoints, $lower) and map-has-key($breakpoints, $upper) {
+
+    $lower-breakpoint: map-get($breakpoints, $lower);
+    $upper-breakpoint: map-get($breakpoints, $upper);
+
+    @media (min-width: $lower-breakpoint) and (max-width: ($upper-breakpoint - 1)) {
+      @content;
+    }
+  } @else {
+    @if (map-has-key($breakpoints, $lower) == false) {
+      @warn 'Your lower breakpoint was invalid: #{$lower}.';
+    }
+
+    @if (map-has-key($breakpoints, $upper) == false) {
+      @warn 'Your upper breakpoint was invalid: #{$upper}.';
+    }
+  }
+}

@@ -1,0 +1,867 @@
+/* Обнуление */
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+*,*::before,*::after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+
+nav,footer,header,aside{display: block;}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,button,textarea {font-family: inherit;}
+input::-ms-clear {display: none;}
+button {cursor: pointer;}
+button::-moz-focus-inner {padding: 0; border: 0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+
+h1,h2,h3,h4,h5,h6 {font-size: inherit; font-weight: 400;}
+/* /Обнуление */
+
+.image {
+  max-width: 100%;
+  height: 100%;
+}
+/* Header */
+header,
+.header-logo,
+.header-menu,
+.header-menu li {
+  display: flex;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px 0 60px;
+  max-width: 1185px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.header-logo {
+  max-width: 160px;
+  height: 90px;
+}
+.header__button{
+  display: none;
+}
+
+.header-menu {
+  max-width: 775px;
+  width: 100%;
+  justify-content: space-between;
+}
+.header-menu li {
+  height: 30px;
+  align-items: center;
+}
+.header-menu a {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 13px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.header-menu li:first-child {
+  padding: 9px 7px 9px 6px;
+  line-height: 10px;
+  border: 1px solid #D1A954;
+}
+.header-menu-first_link a {
+  color: #D1A954;
+  transition: 0.5s;
+}
+.header-menu__link a:hover {
+  font-size: 13px;
+  color: #D1A954;
+  box-shadow: 10px 5px 5px gold;
+  transition: .3s;
+}
+/* /Header */
+
+/* Slider1 */
+.restaurant-slider {
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 120px;
+}
+#first-slider {
+  padding: 0 10px;
+  overflow: hidden;
+
+}
+.restaurant__swiper-slide {
+  width: 580px;
+  height: 650px;
+}
+.restaurant-slider__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+}
+
+#restaurant-slider_pagination__container.swiper-pagination {
+  position: static;
+  width: 15%;
+}
+#restaurant-slider_pagination__btn_next.swiper-button-next:after {
+  font-size: 10px;
+}
+#restaurant-slider_pagination__btn_prev.swiper-button-prev:after, .swiper-container-rtl .swiper-button-next:after {
+  font-size: 10px;
+}
+
+#restaurant-slider_pagination__btn_prev.swiper-button-prev,
+#restaurant-slider_pagination__btn_next.swiper-button-next {
+  position: relative;
+  top: 13px;
+  left: 0;
+  color: #000000;
+}
+
+#restaurant-slider_pagination__container .swiper-pagination-bullet {
+  width: 20px;
+  height: 2px;
+  border-radius: 0;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  margin: 0;
+}
+/* /Slider1 */
+
+/*restorans */
+.about-the-restaurant {
+  font-family: "Montserrat";
+  font-weight: 300;
+  text-align: center;
+  color: #616161;
+}
+.about-the-restaurant__heading h1 {
+  font-family: 'Montserrat';
+  font-size: 36px;
+  font-weight: 300;
+  color: #222222;
+  margin-bottom: 25px;
+}
+.about-the-restaurant__first-item img {
+  width: 203px;
+  height: 110px;
+}
+
+.about-the-restaurant__img img {
+  padding-bottom: 10px;
+}
+.about-the-restaurant__img {
+  position: relative;
+}
+
+.about-the-restaurant__icon-play::after {
+  left: 49%;
+  bottom: 45%;
+  content: '';
+  position: absolute;
+  width: 80px;
+  height: 81px;
+  background: url(../Summer_palace/img/play-button.png);
+}
+
+.about-the-restaurant__heading p {
+  font-family: 'Montserrat';
+  font-size: 9px;
+  font-weight: 300;
+  line-height: 11px;
+  text-transform: uppercase;
+}
+.about-the-restaurant__img {
+  position: relative;
+  z-index: 0;
+}
+.about-the-restaurant__background_grey {
+  position: relative;
+  padding-top: 360px;
+  margin-top: -285px;
+  background-color: #E5E5E5;
+  z-index: -1;
+}
+.about-the-restaurant__content {
+  display: flex;
+  justify-content: space-between;
+  width: 1015px;
+  margin: 0 auto;
+}
+.about-the-restaurant__first-item {
+  width: 350px;
+}
+.about-the-restaurant__first-item p {
+  text-align: left;
+}
+.about-the-restaurant__first-item img {
+  margin-bottom: 33px;
+}
+
+.about-the-restaurant_content-text {
+  position: relative;
+  width: 255px;
+  height: 155px;
+  flex-direction: column;
+  text-align: left;
+}
+.about-the-restaurant_content-text p {
+  font-weight: 300;
+  font-size: 14px;
+}
+.about-the-restaurant_content-text {
+  margin-bottom: 40px;
+}
+
+.about-the-restaurant_content-text h3 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 16px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #000000;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+
+.about-the-restaurant__icon-palace::after,
+.about-the-restaurant__icon-interiors::after,
+.about-the-restaurant__icon-technologies::after,
+.about-the-restaurant__icon-equipment::after {
+  content: '';
+  position: absolute;
+}
+.about-the-restaurant__icon-equipment {
+  padding-left: 25px;
+}
+
+.about-the-restaurant__icon-palace::after {
+  top: 0;
+  left: 0;
+  width: 46px;
+  height: 30px;
+  background: url(../Summer_palace/img/icon-palace.svg);
+}
+
+.about-the-restaurant__icon-interiors::after {
+  top: 10px;
+  left: 0;
+  width: 39px;
+  height: 21px;
+  background: url(../Summer_palace/img/icon-interiors.png);
+}
+
+.about-the-restaurant__icon-technologies::after {
+  top: 0;
+  left: 0;
+  width: 37px;
+  height: 32px;
+  background: url(../Summer_palace/img/icon-tehnolodgy.png);
+}
+.about-the-restaurant__icon-equipment::after {
+  top: 0;
+  left: 0;
+  width: 43px;
+  height: 38px;
+  background: url(../Summer_palace/img/icon-oborydovanie.png);
+}
+/* /restorans */
+
+/* galery */
+.gallery {
+  width: 1110px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 140px;
+  margin-bottom: 150px;
+}
+.gallery__first-content_flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.gallery__first-content_item {
+  margin-right: 130px;
+}
+.gallery__first-content_item h3 {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 24px;
+  color: #000000;
+  text-transform: uppercase;
+  margin-bottom: 25px;
+}
+.gallery__first-content_img {
+  margin-bottom: 10px;
+}
+.gallery__first-content_text {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 9px;
+  text-transform: uppercase;
+  color: #000000;
+}
+.gallery__second-content_flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.gallery__second-content_image:first-child {
+  margin-bottom: 20px;
+}
+/* /galery */
+
+/* presentation */
+.presentation {
+  color: #FFFFFF;
+  background: url(../Summer_palace/img/img-fon.png);
+  margin-bottom: 120px;
+}
+.presentation__content {
+  margin: 0 auto;
+  padding-top: 130px;
+  width: 665px;
+  text-align: center;
+  padding-bottom: 120px;
+}
+.presentation__content h2 {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 36px;
+  text-transform: uppercase;
+  margin-bottom: 70px;
+}
+.presentation__content_btn {
+  display: flex;
+  justify-content: space-between;
+}
+.presentation__content_btn button:first-child {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 16px;
+  width: 255px;
+  padding: 22px 0 22px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+.presentation__content_btn button:last-child {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 16px;
+  width: 320px;
+  padding: 22px 0 22px;
+  text-transform: uppercase;
+  color: #000000;
+  background-color: #FFFFFF;
+  border: none;
+  cursor: pointer;
+}
+/* /presentation */
+
+/* event */
+.event {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+.event__content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 120px;
+}
+.event__content_left-item {
+  max-width: 540px;
+}
+
+.event__content_left-item h2 {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #000000;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  margin-bottom: 40px;
+}
+
+.event__content_left-item p {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 20px;
+  color: #616161;
+  margin-bottom: 60px;
+}
+.contacts__content_flex {
+  display: flex;
+  justify-content: space-between;
+}
+.contacts__left-content_link,
+.contacts__right-content_link {
+  max-width: 255px;
+  width: 100%;
+}
+.contacts__left-content_link a:hover,
+.contacts__right-content_link a:hover {
+  text-decoration: none;
+}
+
+.contacts__left-content_link h3,
+.contacts__right-content_link h3 {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-weight: 300;
+  font-size: 16px;
+  text-transform: uppercase;
+  color: #000000;
+  margin-bottom: 30px;
+}
+.contacts__left-content_link a,
+.contacts__right-content_link a {
+  position: relative;
+  display: block;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 12px;
+  padding-left: 50px;
+  text-decoration-line: underline;
+  color: #000000;
+}
+.contacts__content_icon-adress,
+.contacts__content_icon-tel {
+ margin-bottom: 30px;
+}
+.contacts__content_icon-adress::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 30px;
+  height: 30px;
+  background: url(../Summer_palace/img/icon-maps.svg) no-repeat;
+}
+.contacts__content_icon-tel::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: -5px;
+  width: 30px;
+  height: 30px;
+  background: url(../Summer_palace/img/icon-tel.svg) no-repeat;
+}
+.contacts__content_icon-email::after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 22px;
+  height: 22px;
+  background: url(../Summer_palace/img/icon-email.svg) no-repeat;
+}
+.contacts__right-content_link {
+  max-width: 540px;
+  width: 100%;
+}
+.contacts__right-content_form input {
+  max-width: 540px;
+  height: 32px;
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 25px;
+  border: none;
+  border-bottom: 1px solid #D0D0D0;
+}
+.contacts__right-content_form textarea {
+  width: 540px;
+  height: 196px;
+  padding: 15px;
+  border: 1px solid #D0D0D0;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+}
+.contacts__right-content_form::placeholder {
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 135%;
+  color: #616161;
+}
+.contacts__right-content_form_btn {
+  max-width: 182px;
+  height: 45px;
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: 300;
+  font-size: 16px;
+  color: #FFFFFF;
+  background: #D1A954;
+  border: none;
+  cursor: pointer;
+}
+/* /event*/
+
+/* instagram__text_block */
+.instagram {
+  text-align: center;
+  background: #F9F7F7;
+  padding-top: 120px;
+  padding-bottom: 90px;
+}
+.instagram h2 {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 36px;
+  text-transform: uppercase;
+  color: #222222;
+  letter-spacing: 0.05em;
+  margin-bottom: 10px;
+}
+.instagram_icon {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.instagram p {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 9px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #000000;
+}
+/* /instagram__text_block */
+
+/* Slider2 */
+#second-slider {
+  overflow: hidden;
+}
+
+#instagram__slider_btn_next.swiper-button-next, 
+#instagram__slider_btn_prev.swiper-button-prev {
+  position: relative;
+}
+#instagram__slider_swiper_pagination.swiper-pagination {
+  position: relative;
+  top: -14px;
+}
+.instagram__slider_pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+#instagram__slider_swiper_pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 2px;
+  border-radius: 0;
+  border: 1px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+#instagram__slider_swiper_pagination.swiper-pagination {
+  width: 10%;
+}
+#instagram__slider_btn_next::after {
+  font-size: 10px;
+  color: #000000;
+}
+#instagram__slider_btn_prev::after {
+  font-size: 10px;
+  color: #000000;
+}
+/* /Slider2 */
+
+/* Footer */
+footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+.footer__content_flex {
+  max-width: 1110px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.footer__content_flex p {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 135%;
+  color: #000000;
+}
+/* /Footer */
+
+/* Adapt version */
+@media screen and (min-width: 320px) and (max-width: 1600px) {
+  #first-slider img,
+  #first-slider .restaurant__swiper-slide  {
+    height: auto;
+  }
+
+}
+@media screen and (min-width: 320px) and (max-width: 1200px) {
+  #instagram__slider_swiper_pagination.swiper-pagination {
+    width: 20%;
+  }
+
+}
+@media screen and (min-width: 320px) and (max-width: 1220px) {
+  header {
+    align-items: initial;
+  }
+  .hidden {
+    opacity: 0;
+    transition: .4s;
+  }
+  
+  #restaurant-slider_pagination__container.swiper-pagination {
+    max-width: 30%;
+    width: 100%;
+  }
+  header,
+  .header-menu {
+    flex-direction: column;
+  }
+  .header-logo {
+    max-width: 300px;
+    width: 100%;
+    height: auto;
+  }
+  header {
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 50;
+  }
+  .header__shown {
+    position: sticky;
+    background-color: #fff;
+  }
+  .header-menu {
+    position: absolute;
+    top: 120px;
+    left: 0;
+    padding: 10px 20px;
+    max-width: 300px;
+    width: 100%;
+    background-color: #E5E5E5;
+  }
+  
+  .header__button {
+    position: relative;
+    top: -49px;
+    right: -49%;
+    font-size: 25px;
+    margin-right: 10px;
+    background-color: #fff;
+    border: none;
+    display: block;
+  }
+  .fa-bars,
+  .fa-times {
+    position: absolute;
+  }
+
+  .logo__img {
+    max-width: 120px;
+    width: 100%;
+  }
+  
+}
+
+@media screen and (min-width: 320px) and (max-width: 1100px) {
+  #first-slider {
+    margin-top: 30px;
+  }
+  .about-the-restaurant__background_grey {
+    padding-top: 275px;
+  }
+  .about-the-restaurant__first-item {
+    margin-bottom: 30px;
+  }
+  .about-the-restaurant__content {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+  }
+  .presentation {
+    margin-bottom: 60px;
+  }
+  .about-the-restaurant__first-item p {
+    text-align: center;
+  }
+  .gallery {
+    width: 100%;
+    margin-top: 70px;
+    margin-bottom: 50px;
+  }
+  .gallery__first-content_flex {
+    flex-direction: column;
+  }
+  .gallery__first-content_item {
+    margin-right: 0;
+  }
+  .gallery__second-content_flex {
+    flex-direction: column;
+  }
+  .img-banquet {
+    margin: 30px 0 30px;
+  }
+  .img-spread {
+    margin-bottom: 30px;
+  }
+  .event {
+    width: 100%;
+    text-align: center;
+  }
+  .event__content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .event__content_left-item {
+    margin-bottom: 50px;
+  }
+  .presentation__content_btn {
+    flex-direction: column;
+    align-items: center;
+  }
+  .presentation__content {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .presentation__content_btn button:first-child {
+    margin-bottom: 40px;
+  }
+  footer {
+    margin: 0 20px;
+  }
+  
+}
+
+@media screen and (min-width: 320px) and (max-width: 620px) {
+  #restaurant-slider_pagination__container.swiper-pagination {
+    max-width: 60%;
+  }
+  .about-the-restaurant__icon-play::after {
+    left: 45%;
+    bottom: 40%;
+  }
+  .presentation__content {
+    width: 100%;
+  }
+  .presentation__content h2 {
+    font-size: 25px;
+    margin: 0;
+  }
+  .presentation__content_btn button:first-child {
+    margin-top: 40px;
+  }
+  .presentation__content {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
+  .about-the-restaurant__first-item {
+    width: 80%;
+  }
+  .contacts__right-content_form textarea,
+  .contacts__right-content_form input {
+    width: 100%;
+  }
+  .event__content {
+    margin: 0 20px;
+  }
+  .event__content_left-item h2 {
+    font-size: 25px;
+  }
+  .event__content_left-item p {
+    font-size: 12px;
+  }
+  .contacts__right-content_form {
+    margin-bottom: 30px;
+  }
+  .img-spread {
+    width: 90%;
+  }
+  #instagram__slider_swiper_pagination.swiper-pagination {
+    width: 40%;
+  }
+  .footer__content_flex {
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer__copyright {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 450px) {
+  .contacts__content_flex {
+    flex-direction: column;
+  }
+  .contacts__left-content_link, .contacts__right-content_link {
+    max-width: none;
+    margin-bottom: 30px;
+  }
+  .img-banquet,
+  .img-people,
+  .img-cocktail,
+  .img-auto-sales {
+    width: 90%;
+  }
+  .presentation__content h2 {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 400px) {
+  .about-the-restaurant__icon-play::after {
+    left: 38%;
+    bottom: 33%;
+  }
+  .footer__content_flex p {
+    font-size: 12px;
+  }
+  .instagram h2 {
+    font-size: 25px;
+  }
+  .about-the-restaurant p {
+    font-size: 12px;
+  }
+  .presentation__content_btn button:last-child {
+    width: 280px;
+ }
+}
+/* /Adapt version */
