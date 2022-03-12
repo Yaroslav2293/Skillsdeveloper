@@ -1,0 +1,123 @@
+html {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.header-button {
+  display: none;
+}
+
+.header {
+  padding: 0 20px;
+  position: relative;
+
+  &-logo {
+    display: block;
+    max-width: 150px;
+    width: 100%;
+    margin-right: 20px; 
+    &__content {
+      display: flex;
+      min-height: 70px;
+      padding-bottom: 20px;
+      @include media-down('xs') {
+        background-color: #fff;
+        opacity: 0.8;
+        padding-bottom: 0;
+        justify-content: space-between;
+      }
+    }
+  }
+  
+  &-menu__content {
+    @include media-down('xs') {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: #fff;
+      opacity: 0.8;
+    }
+  }
+
+  &-contacts {
+    @extend %flex-container;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 13px;
+    padding: 25px 0;
+    color: #fff;
+    max-width: 960px;
+    width: 100%;
+    @include media-down('xs') {
+      width: 100%;
+      flex-direction: column;
+      padding: 10px 0;
+      color: black;
+      text-align: center;
+      display: none;
+    }
+  }
+
+  &__nav {
+    &-group {
+      display: flex;
+      li:first-child {
+        border-left: none;
+      }
+      li:last-child {
+        border-right: none;
+      }
+      @include media-down('lg') {
+        flex-direction: column;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+      }
+    }
+    
+    &-item {
+      padding: 13px 105px;
+      border: 1px solid #fff;
+    }
+    &-link {
+      color: #fff;
+    }
+  }
+
+  // burger menu
+  @include media-down('xs') {
+    .hidden {
+      opacity: 0;
+      transition: .4s;
+    }
+  
+    .header-menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      padding: 10px 20px;
+      margin-top: 30px;
+      width: 100%;
+    }
+    
+    .header-button {
+      position: relative;
+      width: 30px;
+      height: 30px;
+      font-size: 25px;
+      background-color: #fff;
+      border: none;
+      display: block;
+    }
+    
+    .fa-bars,
+    .fa-times {
+      position: absolute;
+      color: #99862A;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }  
+  // burger menu
+}

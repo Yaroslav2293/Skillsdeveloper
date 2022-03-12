@@ -1,0 +1,597 @@
+.container {
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+// wines__carts
+.wines-carts__background {
+  margin-top: -130px;
+  padding-top: 150px;
+  max-width: 1920px;
+  width: 100%;
+  background: url('../img/wines__carts-background.png') no-repeat;
+  min-height: 900px;
+  height: auto;
+  @include media-down('lg') {
+    margin-top: -255px;
+    padding-top: 300px;
+  }
+}
+.wines-carts__button {
+  position: absolute;
+  bottom: 300px;
+  left: 38%;
+  cursor: pointer;
+  @include media-down('lg') {
+    left: 30%;
+  }
+
+  @include media-down('s') {
+    left: 22%;
+  }
+
+  @include media-down('xs') {
+    display: flex;
+    flex-direction: column;
+    left: 33%;
+    top: 40%;
+  }
+
+  @include media-down('small') {
+    left: 22%;
+  }
+
+  button:first-child {
+    margin-right: 60px;
+    @include media-down('xs') {
+      margin: 0 0 20px 0;
+    }
+  }
+
+  button {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    line-height: 20px;
+    letter-spacing: 0.05em;
+    padding: 15px 30px;
+    text-transform: uppercase;
+    background-color: #99862A;
+    color: #fff;
+  }
+}
+// wines__carts
+
+// wine__taste
+.wine-taste {
+  padding: 100px 0 100px 0;
+  background-color: #282828;
+  @include media-down('lg') {
+    padding: 60px 10px;
+  }
+}
+
+.wine-taste__content {
+  border: 1px solid #fff;
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.wine-taste__text {
+  max-width: 740px;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+  @include media-down('lg') {
+    padding: 0 10px;
+  }
+  h2 {
+    position: relative;
+    padding: 60px 0 40px 0;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    @include media-down('md') {
+      font-size: 25px;
+      text-align: center;
+    }
+    @include media-down('small') {
+      font-size: 20px;
+    }
+  }
+
+  h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%);
+    width: 160px;
+    border: 1px solid #fff;
+  }
+
+  p {
+    padding: 40px 0 60px 0;
+    text-align: center;
+    line-height: 24px;
+    font-size: 16px;
+  }
+
+  img {
+    display: block;
+    margin: 0 auto;
+    padding-bottom: 60px;
+  }
+}
+// wine__taste
+
+// new__collections
+.new-collections {
+  padding: 80px 0 80px 0;
+  background-color: #E6E3C4;
+}
+
+.new-collections__container {
+  @extend %flex-container;
+  border-top: 1px solid #998431;
+  border-bottom: 1px solid #998431;
+  @include media-down('md') {
+    padding: 0 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.new-collections__content {
+  padding: 60px 0 60px 0;
+  max-width: 445px;
+  width: 100%;
+  @include media-down('md') {
+    padding: 30px 0;
+  }
+}
+
+.new-collections__date {
+  position: relative;
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  padding: 30px 0 30px 0;
+  @include media-down('small') {
+    font-size: 30px;
+  }
+}
+
+h2::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 160px;
+  border: 1px solid #282828;
+}
+
+.new-collections__block_item {
+  padding: 30px 0 0 0;
+  font-size: 14px;
+  line-height: 21px;
+  
+}
+
+.new-collections__Lustra-1980 {
+  padding: 30px 0 0 0;
+  @include media-down('small') {
+    padding: 15px 0;
+  }
+}
+
+.new-collections__flex-item {
+  display: flex;
+  border-bottom: 1px solid #282828;
+}
+
+.new-collections__years {
+  padding: 26px 24px;
+  line-height: 27px;
+  border-right: 1px solid #282828;
+}
+
+
+.new-collections__bianco {
+  padding: 0 0 15px 30px;
+  .colli {
+  font-family: "Playfair Display", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 10px 0 5px 0;
+  @include media-down('small') {
+    font-size: 15px;
+  }
+  }
+
+  .red-bootle {
+  font-size: 14px;
+  line-height: 21px;
+  }
+}
+
+.new-collections__flex-item_last {
+  border-bottom: none;
+}
+
+.new-collections__img {
+  padding: 60px 0 60px 0;
+  max-width: 540px;
+  width: 100%;
+  @include media-down('md') {
+    padding: 30px 0;
+  }
+  .new-collections__first-item {
+    padding-bottom: 30px;
+    img {
+      max-width: 540px;
+      width: 100%;
+    }
+  }
+
+  .new-collections__second-item {
+    @extend %flex-container;
+    img {
+      max-width: 255px;
+      width: 100%;
+      @include media-down('md') {
+        margin: 10px auto;
+      }
+    }
+    @include media-down('md') {
+      flex-direction: column;
+    }
+  }
+}
+
+.new-collections__btn {
+  margin-top: 30px;
+  padding: 15px 30px;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: #998431;
+  @include media-down('md') {
+    max-width: 445px;
+    width: 100%;
+  }
+  @include media-down('small') {
+    font-size: 14px;
+  }
+}
+// new__collections
+
+// tasting-appointment
+.tasting-appointment {
+  padding: 130px 0 100px 0;
+}
+
+.tasting-appointment__background {
+  background-color: #282828;
+}
+
+.tasting-appointment__wrap {
+  border: 1px solid #fff;
+  position: relative;
+  max-width: 1110px;
+  width: 100%;
+  margin: 0 auto;
+  @include media-down('lg') {
+    max-width: 900px;
+  }
+  @include media-down('md') {
+    max-width: 600px;
+  }
+  @include media-down('sm') {
+    max-width: 570px;
+  }
+  @include media-down('xs') {
+    max-width: 380px;
+  }
+  @include media-down('small') {
+    max-width: 300px;
+  }
+}
+
+.tasting-appointment__wrap::after {
+  content: '';
+  position: absolute;
+  background: url(../img/grape_icon.png) no-repeat;
+  background-size: cover;
+  width: 260px;
+  height: 260px;
+  top: -80px;
+  left: -60px;
+  @include media-down('md') {
+    display: none;
+  }
+}
+
+.tasting-appointment__wrap::before {
+  content: '';
+  position: absolute;
+  background: url(../img/barrel_of_wine_icon.png) no-repeat;
+  background-size: cover;
+  width: 260px;
+  height: 200px;
+  top: -65px;
+  right: -60px;
+  @include media-down('md') {
+    display: none;
+  }
+}
+
+.tasting-appointment {
+  @include media-down('xs') {
+    padding: 60px 0;
+  }
+  &__content {
+    max-width: 540px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    @include media-down('md') {
+      max-width: 500px;
+    }
+    @include media-down('sm') {
+      max-width: 420px;
+    }
+    @include media-down('xs') {
+      max-width: 300px;
+    }
+    @include media-down('small') {
+      max-width: 250px;
+    }
+  }
+
+  &__title {
+    position: relative;
+    font-family: "Playfair Display", sans-serif;
+    font-weight: 700;
+    line-height: 54px;
+    font-size: 36px;
+    color: #fff;
+    padding: 5px 15px 40px;
+    bottom: 35px;
+    background-color: #282828;
+    @include media-down('md') {
+      font-size: 28px;
+    }
+    @include media-down('xs') {
+      font-size: 22px;
+    }
+    @include media-down('small') {
+      font-size: 18px;
+    }
+    &::after {
+      position: absolute;
+      content: '';
+      width: 118px;
+      border-bottom: 1px solid #fff;
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%);
+    } 
+
+  }
+
+  &__text {
+    padding-bottom: 80px;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #fff;
+    @include media-down('xs') {
+      padding: 0 0 30px 0;
+      font-size: 14px;
+    }
+  }
+
+
+// form
+  &__form {
+    &-btn {
+      padding: 15px 209px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 20px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      text-align: center;
+      color: #fff;
+      background-color: #282828;
+      border: 1px solid #fff;
+      margin-bottom: 80px;
+      @include media-down('md') {
+        padding: 15px 185px;
+      }
+      @include media-down('sm') {
+        padding: 15px 145px;
+      }
+      @include media-down('xs') {
+        padding: 15px 65px;
+        margin-bottom: 30px;
+      }
+    }
+    &-input {
+      max-width: 255px;
+      width: 100%;
+      padding-bottom: 14px;
+      background-color: #282828;
+      border-bottom: 1px solid #fff;
+      &_half {
+        max-width: 255px;
+        @include media-down('md') {
+          max-width: 200px;
+        }
+        @include media-down('xs') {
+          max-width: 255px;
+          margin-bottom: 30px;
+        }
+      }
+
+      &_full {
+        max-width: 540px;
+        @include media-down('xs') {
+          max-width: 255px;
+        }
+      }
+      
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+    &-wrap {
+      @extend %flex-container;
+      padding-bottom: 40px;
+      @include media-down('xs') {
+        display: block;
+        margin: 10px auto;
+        padding: 0;
+      }
+    }
+
+    &-address {
+      padding-bottom: 50px;
+    }
+  }
+}
+// form
+
+// tasting-appointment
+
+// footer
+.footer {
+  &__bg {
+    background: #998431;
+  }
+
+  &__container {
+    padding: 50px 0 50px;
+  }
+
+  &__nav {
+    border-top: 1px solid #FFF;
+    border-bottom: 1px solid #FFF;
+  }
+
+  &__menu {
+    @extend %flex-container;
+    padding: 0 80px;
+    text-align: center;
+    @include media-down('md') {
+      padding: 10px 80px;
+      display: block;
+    }
+    @include media-down('small') {
+      padding: 0 40px;
+    }
+    li {
+      padding: 19px 0;
+      line-height: 150%;
+      color: #FFFFFF;
+      font-size: 14px;
+      @include media-down('md') {
+        padding: 5px 0;
+      }
+    }
+  }
+
+  &__contacts-container {
+    max-width: 1110px;
+    width: 100%;
+    border-bottom: 1px solid #FFF;
+  }
+
+  &__contacts {
+    padding: 0 80px;
+    display: flex;
+    color: #fff;  
+    @include media-down('md') {
+      display: block;
+    }
+    @include media-down('small') {
+      padding: 0 40px;
+    }
+  }
+
+  &__contacts-title {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 21px;
+    padding: 20px 55px 20px 0;
+    text-transform: uppercase;
+    border-right: 1px solid #fff;
+    @include media-down('md') {
+      padding: 20px 0 20px 0;
+      text-align: center;
+      border-right: none;
+    }
+  }
+  
+  &__contacts-number {
+    font-size: 14px;
+    text-align: center;
+    border-right: 1px solid #fff;
+    padding: 20px 60px;
+    @include media-down('tab') {
+      padding: 20px 38px;
+    }
+    @include media-down('md') {
+      padding: 0 0 20px 0;
+      border-right: none;
+    }
+  }
+
+
+  &__social {
+    font-size: 20px;
+    text-align: center;
+    border-right: 1px solid #fff;
+    padding: 20px 60px;
+    @include media-down('tab') {
+      padding: 20px 38px;
+    }
+    @include media-down('md') {
+      padding: 0 0 20px 0;
+      border-right: none;
+    }
+  }
+
+  &__youtube {
+    padding-right: 35px;
+  }
+  &__vk {
+    padding-right: 40px;
+  }
+  
+  &__web {
+    font-weight: 600;
+    padding: 20px 0 20px 80px;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-align: right;
+    @include media-down('tab') {
+      padding: 20px 0 20px 50px;
+    }
+    @include media-down('md') {
+      padding: 0 0 20px 0;
+      text-align: center;
+    }
+  }
+    
+}
+// footer
